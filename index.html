@@ -19,18 +19,21 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="bg-[#f5f8ff]">
     <!-- Header -->
     <header>
-        <nav class="container">
-            <div class="flex justify-between items-center">
+        <nav class="container px-5">
+            <div class="flex justify-between items-center py-5">
                 <a href="#">
                     <img src="./assets/logo.png" alt="Logo">
                 </a>
                 <ul class="flex items-center gap-12">
-                    <li><a class="text-[#8987A1] font-medium duration-300 hover:text-[#252432]" href="#">Home</a></li>
-                    <li><a class="text-[#8987A1] font-medium duration-300 hover:text-[#252432]" href="#">Shop</a></li>
-                    <li><a class="text-[#8987A1] font-medium duration-300 hover:text-[#252432]" href="#">About us </a>
+                    <li class="hidden md:block"><a class="text-[#8987A1] font-medium duration-300 hover:text-[#252432]"
+                            href="#">Home</a></li>
+                    <li class="hidden md:block"><a class="text-[#8987A1] font-medium duration-300 hover:text-[#252432]"
+                            href="#">Shop</a></li>
+                    <li class="hidden md:block"><a class="text-[#8987A1] font-medium duration-300 hover:text-[#252432]"
+                            href="#">About us </a>
                     </li>
                     <li><a class="text-[#000000] font-medium" href="#"><i class="fa-solid fa-cart-shopping"></i> Cart
                             ($56)</a></li>
@@ -38,12 +41,13 @@
             </div>
         </nav>
     </header>
-    <main class="container">
+    <main class="container px-5">
         <!-- Banner -->
         <section class="my-30">
-            <div class="flex justify-between items-end">
-                <div class="md:w-1/2">
-                    <h1 class="text-[65px] font-bold text-[#E95A08]"><span class="text-[#000000]">ALWAYS</span> FRESH
+            <div class="flex flex-col-reverse md:flex-row justify-between items-end">
+                <div class="md:w-1/2 mt-7 md:mt-0">
+                    <h1 class="text-3xl md:text-[65px] font-bold text-[#E95A08]"><span
+                            class="text-[#000000]">ALWAYS</span> FRESH
                         FLOWERS</h1>
                     <p class="text-[#000000]/50 mt-3">Indulge your senses with the beauty and fragrance of our fresh
                         flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that
@@ -63,7 +67,7 @@
                     our
                     fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
             </div>
-            <div class="grid lg:grid-cols-4 gap-x-5 gap-y-7 mt-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-7 mt-12">
                 <!-- Product Card 1 -->
                 <div class="text-center">
                     <img class="w-full mb-5" src="./assets/sample-flower-image.png" alt="sample-flower-image">
@@ -139,25 +143,25 @@
             </div>
         </section>
         <!-- Plants Lover Section -->
-        <section class="mb-30 mt-52">
-            <div class="flex justify-between items-center gap-15">
-                <div class="w-1/2 relative">
+        <section class="mb-30 md:mt-52">
+            <div class="flex justify-between items-center gap-15 flex-col md:flex-row">
+                <div class="md:w-1/2 relative">
                     <img class="w-full" src="./assets/flower-store.png" alt="flower-store">
-                    <img class="absolute -top-30 -right-25 w-[286px] ease-in-out animate-bounce"
+                    <img class="absolute -top-30 -right-25 w-[286px] ease-in-out animate-bounce hidden md:block"
                         src="./assets/trusted-badge.png" alt="trusted-badge">
                 </div>
-                <div class="w-1/2">
-                    <h2 class="font-bold text-[50px] text-black mb-5">Flower & Plants Lover</h2>
+                <div class="md:w-1/2">
+                    <h2 class="font-bold text-2xl md:text-[50px] text-black mb-5">Flower & Plants Lover</h2>
                     <ul class="space-y-5 max-w-[540px]">
-                        <li class="text-black/50 list-disc ml-5 text-[22px] ">Indulge your senses with the beauty and
+                        <li class="text-black/50 list-disc ml-5 text-[14px] ">Indulge your senses with the beauty and
                             fragrance of
                             our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of
                             fresh.</li>
-                        <li class="text-black/50 list-disc ml-5 text-[22px] ">Indulge your senses with the beauty and
+                        <li class="text-black/50 list-disc ml-5 text-[14px] ">Indulge your senses with the beauty and
                             fragrance of
                             our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of
                             fresh.</li>
-                        <li class="text-black/50 list-disc ml-5 text-[22px] ">Indulge your senses with the beauty and
+                        <li class="text-black/50 list-disc ml-5 text-[14px] ">Indulge your senses with the beauty and
                             fragrance of
                             our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of
                             fresh.</li>
@@ -165,10 +169,7 @@
                 </div>
             </div>
         </section>
-        <!-- Join Section -->
-        <section>
 
-        </section>
         <!-- Latest Deal Section -->
         <section>
             <div class="text-center">
@@ -178,7 +179,7 @@
                     our
                     fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
             </div>
-            <div class="grid grid-cols-3 gap-7 my-30">
+            <div class="grid md:grid-cols-3 gap-7 my-30">
                 <div class="rounded-[14px] overflow-hidden bg-[url('./assets/deal-bloom.png')] bg-center bg-cover">
                     <div class="bg-black/40 text-center py-16">
                         <h5 class="text-xl font-bold text-white">60% Off | Bloom Plant</h5>
@@ -186,10 +187,11 @@
                     </div>
                 </div>
                 <div
-                    class="col-span-2 row-span-2 rounded-[22px] overflow-hidden bg-[url('./assets/deal-zabo.png')] bg-center bg-cover">
-                    <div class="bg-black/40 text-center py-[144px]">
-                        <h5 class="text-[40px] font-bold text-white">25% Off | Zabo Plant</h5>
-                        <a class="text-white text-[28px] font-semibold border-b-2 border-white" href="#">Shop Now</a>
+                    class="md:col-span-2 md:row-span-2 rounded-[14px] md:rounded-[22px] overflow-hidden bg-[url('./assets/deal-zabo.png')] bg-center bg-cover">
+                    <div class="bg-black/40 text-center py-16 md:py-[144px]">
+                        <h5 class="text-xl md:text-[40px] font-bold text-white">25% Off | Zabo Plant</h5>
+                        <a class="text-white text-base md:text-[28px] font-semibold border-b-2 border-white"
+                            href="#">Shop Now</a>
                     </div>
                 </div>
                 <div class="rounded-[14px] overflow-hidden bg-[url('./assets/deal-ana.png')] bg-center bg-cover">
@@ -204,9 +206,9 @@
     <!-- Subscribe -->
     <section class="bg-[url('./assets/news-letter-bg.png')] bg-center bg-cover">
         <div class="py-48 bg-black/40">
-            <div class="max-w-[830px] mx-auto text-center">
-                <h3 class="text-white font-bold text-[50px] mb-6">Join the colorful Bunch</h3>
-                <div class="relative">
+            <div class="max-w-[350px] md:max-w-[830px] mx-auto text-center">
+                <h3 class="text-white font-bold text-2xl md:text-[50px] mb-6">Join the colorful Bunch</h3>
+                <div class="relative ">
                     <input class="w-full bg-white px-5 py-4" type="text" placeholder="Write email">
                     <button
                         class="text-white text-base font-semibold px-[50px] py-4 bg-[#E95A08] cursor-pointer absolute top-0 right-0">Subscribe</button>
@@ -216,11 +218,12 @@
     </section>
     <!-- Footer Section -->
     <footer class="py-12">
-        <div class="container">
-            <div class="flex items-start gap-10">
+        <div class="container px-5">
+            <div class="md:flex items-start gap-10 space-y-5">
                 <div class="flex-3">
                     <a href="#"><img src="./assets/logo.png" alt="logo"></a>
-                    <p class="text-black/50 mt-4 max-w-[359px]">Indulge your senses with the beauty and fragrance of our fresh flower
+                    <p class="text-black/50 mt-4 max-w-[359px]">Indulge your senses with the beauty and fragrance of our
+                        fresh flower
                         shop.
                     </p>
                 </div>
@@ -242,7 +245,7 @@
                         <li><a class="text-[#6B7280]" href="#">Help Center</a></li>
                     </ul>
                 </div>
-                <div class="flex gap-6 items-center flex-2 justify-end">
+                <div class="flex gap-6 items-center flex-2 md:justify-end">
                     <a href="#"><img src="./assets/icon-linkedin.png" alt="Social icon"></a>
                     <a href="#"><img src="./assets/icon-facebook.png" alt="Social icon"></a>
                     <a href="#"><img src="./assets/icon-twitter.png" alt="Social icon"></a>
